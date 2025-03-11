@@ -1,0 +1,94 @@
+/********** Large devices only **********/
+@media (min-width: 992px) {
+   .row {
+    width: 30%;
+    height: 250px;
+   }
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .row {
+        width: 45%;
+        height: 200px;
+
+    }
+
+    .row:last-child {
+        width: 100%;
+    }
+  }
+  
+  /********** Small devices only **********/
+  @media (max-width: 767px) {
+    .row {
+        width: 100%;
+        height: auto;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  body {
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+    font-size: small;
+
+  }
+
+  h1 {
+    text-align: center;
+    padding: 30px;
+  }
+
+  .container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .row {
+    position: relative;
+    background-color: rgb(134, 134, 134);
+    border: 2px solid black;
+    padding: 50px 15px 15px;
+    margin: 10px 5px;
+    text-align: left;
+ 
+  }
+
+  .chicken {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 30px;
+    background-color: #E6B8B8;
+    border: 2px solid black;
+  }
+
+  .beef {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 30px;
+    color: white;
+    background-color: #A43D3D;
+    border: 2px solid black;
+  }
+
+  .sushi {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 30px;
+    background-color: #F3E0A1;
+    border: 2px solid black;
+  }
